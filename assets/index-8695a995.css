@@ -352,11 +352,6 @@ video {
     margin-right: .75rem
 }
 
-.mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem
-}
-
 .mx-auto {
     margin-left: auto;
     margin-right: auto
@@ -370,7 +365,6 @@ video {
 .-mt-4 {
     margin-top: -1rem
 }
-
 
 .flex {
     display: flex
@@ -406,6 +400,10 @@ video {
 
 .flex-wrap {
     flex-wrap: wrap
+}
+
+.items-center {
+    align-items: center
 }
 
 .justify-center {
@@ -462,13 +460,19 @@ video {
     padding-bottom: 1.25rem
 }
 
-.align-middle {
-    vertical-align: middle
-}
-
 .text-2xl {
     font-size: 1.5rem;
     line-height: 2rem
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem
+}
+
+.text-9xl {
+    font-size: 8rem;
+    line-height: 1
 }
 
 .text-lg {
