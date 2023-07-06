@@ -14,13 +14,19 @@
         p{
             font-size: 12px;
         }
+        #toshow{
+            display: none;
+        }
+        
     </style>
     
-  <link rel="stylesheet" href="./assets/index-0fbdd036.css">
+  <link rel="stylesheet" href="./assets/index-8695a995.css">
 </head>
 <body >
-    <section class="bg-[#f0f2f5]">
-        <div id="divmain" class=" h-screen  flex flex-wrap justify-center   align-middle mx-8">
+    <section class="bg-[#f0f2f5] " id="tohide">
+
+
+        <div id="divmain" class=" h-screen  flex flex-wrap justify-center   lign-middle mx-auto">
             <div class="left w-80  ">
 
                 <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Faceimg" class="h-28 -mx-9">
@@ -29,18 +35,19 @@
             </div>
 
             
-            <div class="flex flex-col py-5 ml-10 justify-center w-96">
+            <div class="flex flex-col py-5  justify-center w-96">
 
-                <form action="" class="bg-white  shadow-2xl  rounded-md  flex flex-col w-96 justify-center  justify-evenly h-[50vh]">
+                <form action="" class="bg-white  shadow-2xl  rounded-md  flex flex-col w-96 justify-center
+                  justify-evenly h-[50vh]" id="form">
                     
                     <input type="text" name="name" id="" placeholder="Email address or phone number
-                    "  class="border border-slate-400 p-3 mx-3 rounded-md my-[0.4rem] "> 
+                    "  class="border border-slate-400 p-3 mx-3 rounded-md my-[0.4rem] " required> 
                     
-                    <input type="password" name="" id="" placeholder="Password" class="border border-slate-400 p-3 mx-3 rounded-md my-[0.4rem]">
+                    <input type="password" name="" id="" placeholder="Password" class="border border-slate-400 p-3 mx-3 rounded-md my-[0.4rem]" required>
                     
                     <button class="bg-blue-600 p-2 mx-3 rounded-md text-white text-2xl my-[0.4rem]">Log in</button>
                     
-               <button class="text-blue-500 my-[0.4rem]">  Forgotten password? </button>
+               <button class="text-blue-500 my-[0.4rem]"><a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjg4MzcyODM3LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">  Forgotten password?</a> </button>
                <div>
                 <hr class="mx-3">
                </div>
@@ -49,17 +56,48 @@
                
             </form>
             <!-- adds a spcae here  -->
-            <h1 class="flex justify-center py-5">  <span class="font-bold cursor-pointer hover:underline"> Create a Page </span>  
+            <h1 class="flex justify-center py-5">  <span class="font-bold cursor-pointer hover:underline "><a href="https://www.facebook.com/pages/create/?ref_type=registration_form"> Create a Page </a> </span>  
             <span> &nbsp;
                 for a celebrity, brand or business.
             </span> </h1>
             
         </div>
+
         </div>
+
+
+
     </section>
     <section>
         <div> </div>
         
     </section>
+<!--  -->
+<!-- 
+    
+    
+ -->
+ <!--  -->
+    <div class="second flex flex-col justify-center  h-screen items-center justify-evenly " id="toshow">
+        <p class="text-9xl">
+            Are murkh 
+        </p>
+        <p class="text-3xl ">
+          <strong>Remeber:</strong>  Never Enter your login details on any website  Itna bhi nahi pata Leaving you this time
+        </p>
+        <img src="https://em-content.zobj.net/source/microsoft-teams/363/man-facepalming_1f926-200d-2642-fe0f.png" alt="Image failed to load " class=" w-80">
+    </div>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+          
+            tohide.style.display = "none";
+            toshow.style.display = "flex";
+            
+            
+          });
+          
+    </script>
 </body>
 </html>
